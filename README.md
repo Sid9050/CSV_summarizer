@@ -15,9 +15,10 @@ See each subfolder for run instructions.
 API server will run on http://localhost:4000
 
 ### Quick start (frontend)
-1. cd frontend
-2. npm install
-3. npm run start
+1. add .env file and add variable - REACT_APP_API_URL=http://localhost:4000
+2. cd frontend
+3. npm install
+4. npm run start
 Open http://localhost:3000
 
 ### Python module
