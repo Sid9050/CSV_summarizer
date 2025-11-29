@@ -1,0 +1,30 @@
+CSV Summary Backend API Documentation
+
+Base URL: /api
+
+  -------------------------------------
+  1. POST /api/auth/register
+  -------------------------------------
+  Registers a new user. - Body (JSON):
+  { “username”: “string”, “password”:
+  “string” } - Returns JWT token.
+
+  -------------------------------------
+
+  2. POST /api/auth/login
+
+  Authenticates user. - Body (JSON): { “username”: “string”, “password”:“string” } - Returns JWT token.
+
+  -------------------------------------
+  3. POST /api/upload
+  -------------------------------------
+  Uploads a CSV file and generates a summary. 
+  - Headers: Authorization: Bearer  
+  - multipart/form-data: file: CSV file 
+  - Returns: { “fileId”: “uuid”, “message”: “File uploadedsuccessfully” }
+
+  -------------------------------------
+
+In-Memory Data Store
+
+users = {}
